@@ -1,0 +1,90 @@
+
+
+
+{% extends  'as2_app/site_base.html' %}
+
+{% block  page_title%}
+
+About Us
+
+{% endblock %}
+
+{% block  page_heading%}
+
+About Us
+
+{% endblock %}
+
+
+
+{% block main_body%}
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Thesis Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #cced79;
+            color: #160808;
+        }
+        .containers {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #d1e0c9;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .team-member {
+            margin-bottom: 20px;
+        }
+        .team-member h3 {
+            margin-bottom: 5px;
+        }
+        .team-member p {
+            margin: 0;
+        }
+      
+        
+    </style>
+</head>
+<body>
+    <div class="containers">
+        <h1>About Us</h1>
+        <div class="team-member">
+            <h3>ATHUL MATHEWS</h3>
+            <p>Student ID: s359537</p>
+            <p>Email: <a href="mailto:At_matt@outlook.com">At_matt@outlook.com</a></p>
+        </div>
+        <div class="team-member">
+            <h3>ANAND JAISWAL</h3>
+            <p>Student ID: s372184</p>
+            <p>Email: <a href="mailto:Anandjaiswal10101@gmail.com">Anandjaiswal10101@gmail.com</a></p>
+        </div>
+        <div class="team-member">
+            <h3>ABHI ADHIKARI</h3>
+            <p>Student ID: s375342</p>
+            <p>Email: <a href="mailto:adhikariabhi394@gmail.com">adhikariabhi394@gmail.com</a></p>
+        </div>
+        <div class="team-member">
+            <h3>AKSHIT PATEL</h3>
+            <p>Student ID: s375100</p>
+            <p>Email: <a href="mailto:patelaskshit569@gmail.com">patelaskshit569@gmail.com</a></p>
+        </div>
+
+    </div>
+</body>
+</html>
+
+
+{% endblock %}
