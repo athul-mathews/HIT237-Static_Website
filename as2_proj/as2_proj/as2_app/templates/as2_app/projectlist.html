@@ -9,42 +9,18 @@
 {% endblock %}
 
 {% block main_body %}
+
+{%  for thess in projects %}
+
   <ul>
     <li>
-      <strong>Machine learning approaches for Cyber Security</strong>
-      <p><em>This project explores various machine learning techniques for enhancing cyber security measures, including anomaly detection, intrusion detection, and malware classification.</em></p>
-      <p>Supervisor: Bharanidharan Shanmugam</p>
-    </li>
-    <li>
-      <strong>Informetrics applications in multidisciplinary domain</strong>
-      <p><em>This project investigates the use of informetrics in diverse fields, such as healthcare, education, and social sciences, to analyze information flow, usage patterns, and citation networks.</em></p>
-      <p>Supervisor: Yakub Sebastian</p>
-    </li>
-    <li>
-      <strong>Development of a Virtual Reality System to Test Binaural Hearing</strong>
-      <p><em>This project aims to develop a virtual reality system for assessing binaural hearing abilities, providing a realistic environment for evaluating auditory perception and spatial localization.</em></p>
-      <p>Supervisor: Sami Azam</p>
-    </li>
-    <li>
-      <strong>Current trends on cryptomining and its potential impact on cryptocurrencies</strong>
-      <p><em>This project analyzes the latest trends in cryptomining activities, exploring their implications for cryptocurrencies, including security risks, market dynamics, and regulatory challenges.</em></p>
-      <p>Supervisor: Sami Azam</p>
-    </li>
-    <li>
-      <strong>Artificial Intelligence in Health Informatics</strong>
-      <p><em>This project investigates the application of artificial intelligence techniques, such as machine learning and natural language processing, in health informatics for tasks like disease diagnosis, patient monitoring, and healthcare data analysis.</em></p>
-      <p>Supervisor: Asif Karim</p>
-    </li>
-    <li>
-      <strong>Unsupervised Model Development from Autism Screening Data</strong>
-      <p><em>This project aims to develop unsupervised machine learning models using autism screening data to identify patterns and subgroups within the autistic population, facilitating personalized interventions and treatment strategies.</em></p>
-      <p>Supervisor: Asif Karim</p>
-    </li>
-    <li>
-      <strong>Applying Artificial Intelligence to solve real world problems</strong>
-      <p><em>This project explores the practical applications of artificial intelligence algorithms and techniques to address real-world challenges across various domains, such as healthcare, finance, transportation, and environmental sustainability.</em></p>
-      <p>Supervisor: Bharanidharan Shanmugam</p>
+      <strong>{{ thess.title }}</strong> <p> Topic Number : {{ thess.topic_num }}</p>
+      <p><em>{{ thess.description }}</em></p>
+      <p>Supervisor: {{ thess.superviser }}</p>
     </li>
   </ul>
+
+{% endfor %}
+
 {% endblock %}
 

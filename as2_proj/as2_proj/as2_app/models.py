@@ -1,3 +1,12 @@
 from django.db import models
 
-# Create your models here.
+class thesis_projects:
+    topic_num : int
+    title : str
+    description : str
+    superviser : str
+
+
+
+
+
