@@ -105,7 +105,7 @@ def projectlist(request):
     thesis7 = thesis_projects()
     thesis7.topic_num = 226
     thesis7.title = 'Applying Artificial Intelligence to solve real world problems'
-    thesis7.description ='Artificial Intelligence has been used in many applications to solve certain problems through out the academia and the industry – from electricity to writing text. AI has a multitude of applications and this project will pick up a problem and explore the applications of AI with minimal human intervention. Examples of applications include -building a bot, predicting the power usage, spam filtering and the list is endless.'
+    thesis7.description ='Artificial Intelligence has been used in many applications to solve certain problems through out the academia and the industry – from electricity to writing text.\n AI has a multitude of applications and this project will pick up a problem and explore the applications of AI with minimal human intervention. Examples of applications include -building a bot, predicting the power usage, spam filtering and the list is endless.'
     thesis7.superviser ='Bharanidharan Shanmugam'
     
     
@@ -118,6 +118,6 @@ def projectlist(request):
 def about(request):
     return render(request, 'as2_app/about.html')
 
-def project_details(request, projects):
-    pass
+def project_details(request):
+    return render(request, 'as2_app/projectdetails.html')
  

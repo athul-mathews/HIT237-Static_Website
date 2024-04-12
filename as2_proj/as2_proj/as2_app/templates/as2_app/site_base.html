@@ -19,6 +19,11 @@
         </ul>
     </nav>
   </div>
+  
+  <div class="header">
+    <h1>{% block page_heading %}{% endblock %}</h1>
+  </div>
+  
   <div class="container">
         {% block main_body %}{% endblock %}
   </div>
