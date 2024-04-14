@@ -17,8 +17,12 @@
       <strong>{{ thess.title }}</strong> <p> Topic Number : {{ thess.topic_num }}</p>
       <p><em>{{ thess.description }}</em></p>
       <p>Supervisor: {{ thess.superviser }}</p>
+      <a href="{% url 'project_details' thess.id %}">Lern more about this project</a>
     </li>
   </ul>
+
+
+  
 
 {% endfor %}
 

@@ -20,9 +20,30 @@ def about(request):
     return render(request, 'as2_app/about.html')
 
 
-def project_details(request):
+def project_details(request , pk):
+    
+    thess_projects = projects()
 
-    return render(request, 'as2_app/projectdetails.html')
+    selected_project = None
+
+    for proj in thess_projects:
+        if pk == proj.id:
+            selected_project = proj
+            break
+
+
+    context = {
+        'project': selected_project,
+    }
+
+    return render(request, 'as2_app/projectdetails.html', context)
+
+
+
+
+
+
+
 
 
 

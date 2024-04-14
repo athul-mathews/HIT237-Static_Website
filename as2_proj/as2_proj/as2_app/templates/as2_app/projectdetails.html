@@ -8,6 +8,18 @@ Project Details
 
 
 {%block main_body%}
+{% if project %}
+<ul>
+    <li>
+      <strong>{{ project.title }}</strong> <p> Topic Number : {{ project.topic_num }}</p>
+      <p><em>{{ project.description }}</em></p>
+      <p>Supervisor: {{ project.superviser }}</p>
+    </li>
+  </ul>
 
-<h1>Page Not Found!!!</h1>
+  {% else %}
+  <h1>No Project Found</h1>
+
+{% endif %}
+
 {%endblock%}

@@ -23,7 +23,7 @@ urlpatterns = [
     path ('', views.home, name='home'),
     path('projects/', views.projectlist, name='project'),
     path('aboutus/', views.about, name='about'),
-    path('projectdetails/', views.project_details, name='project_details'),
+    path('project/<int:pk>', views.project_details, name='project_details'),
    
     
 ]
