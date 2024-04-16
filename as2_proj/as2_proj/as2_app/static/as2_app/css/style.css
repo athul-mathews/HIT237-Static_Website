@@ -1,3 +1,6 @@
+
+                                     /*        Site-base.html css        */
+
 .navbar {
     background: #eee9e9;
     border-radius: 50px;
@@ -82,4 +85,43 @@
     font-size: 23px;
     font-weight: bold;
 }
+
+
+
+                                         /*            about.html css             */
+
+
+.containers{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+
+}
+
+.team-member {
+    width: 500px;
+    height: 300px;
+    background: linear-gradient(45deg, #ee9ca7, #ffdde1);
+    color: rgb(60, 57, 57);
+    font-size: 25px;
+    font-family: sans-serif;
+    text-align: center;
+    border-radius: 200px;
+    line-height: 55px;
+    margin: 50px;
+    box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.team-member h3 {
+  margin: 0px;
+}
+
 

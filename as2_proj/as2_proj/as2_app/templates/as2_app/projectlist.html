@@ -12,6 +12,9 @@
 
 {%  for thess in articles %}
 
+
+
+<div class ='container'>
   <ul>
     <li>
       <strong>{{ thess.title }}</strong>
@@ -20,6 +23,9 @@
       <a href="{% url 'project_details' thess.id %}">Learn more about this project</a>
     </li>
   </ul>
+
+
+</div>
 
 
   
