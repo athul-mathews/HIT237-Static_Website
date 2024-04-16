@@ -1,30 +1,80 @@
-{% extends "as2_app/site_base.html"%}
+{% extends "as2_app/site_base.html" %}
 
-{% block page_title  %}
+{% block page_title %}
 Project Details
 {% endblock %}
 
-{%block page_heading%}
+{% block page_heading %}
 Project Details
-{%endblock%}
+{% endblock %}
 
+{% block main_body %}
+<style>
+  .container {
+    background-color: #f9f9f9;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
 
+  .container ul {
+    list-style-type: none;
+    padding: 0;
+  }
 
-{%block main_body%}
+  .container li {
+    margin-bottom: 15px;
+  }
+
+  .container li strong {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  .container li p {
+    margin: 0;
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  .container li em {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .go-back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .go-back-link:hover {
+    color: #0056b3;
+  }
+</style>
+
 {% if project %}
-<ul>
+<div class="container">
+  <ul>
     <li>
-      <strong>{{ project.title }}</strong> <p> Topic Number : {{ project.topic_num }}</p>
+      <strong>{{ project.title }}</strong>
+      <p>Topic Number: {{ project.topic_num }}</p>
       <p><em>{{ project.description }}</em></p>
       <p>Supervisor: {{ project.superviser }}</p>
     </li>
   </ul>
-
-  {% else %}
-  <h1>No Project Found</h1>
-
+</div>
+{% else %}
+<h1>No Project Found</h1>
 {% endif %}
 
-<a href="{% url 'project' %}">Go Back To The List</a>
-
-{%endblock%}
+<a class="go-back-link" href="{% url 'project' %}">Go Back To The List</a>
+{% endblock %}
